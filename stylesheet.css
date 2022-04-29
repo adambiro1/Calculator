@@ -3,4 +3,22 @@ body{
 }
 h1{
     text-align: center;
+    font-style: oblique;
+}
+table, th, td{
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    color:blue;
+    border:solid black;
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 15px;
+
+}
+caption{
+    color: black;
+}
+th{
+    background-color: aliceblue;
 }
