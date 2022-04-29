@@ -22,3 +22,12 @@ caption{
 th{
     background-color: aliceblue;
 }
+.btn {
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
