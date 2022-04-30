@@ -11,35 +11,45 @@
     </head>
     <body>
         <h1>Calculator</h1>
+       
         <table align="center" style="height: 20%;width: 20%;">
-            <caption>Calculate what you need</caption>
-            <tr>
-                <th colspan="4"><div><p id="number1">number1</p><p id="operator">operator</p><p id="number2">number2</p><p id="result">result</p></div></th>
+               
+            <caption>
+                <form name = "form1">  
+                <input class= "textview" name = "textview">  
+                </form>
+            </caption>
+            <tr> 
+            <td> <input class = "btn" type = "button" value = "1" onclick = "insert(1)" > </td>
+            <td> <input class = "btn" type = "button" value = "2" onclick = "insert(2)" > </td>
+            <td> <input class = "btn" type = "button" value = "3" onclick = "insert(3)" > </td>
+            <td> <input class = "btn" type = "button" value = "+" onclick = "insert('+')" > </td>
+            </tr>
+            <tr> 
+            <td> <input class = "btn" type = "button" value = "4" onclick = "insert(4)" > </td>
+            <td> <input class = "btn" type = "button" value = "5" onclick = "insert(5)" > </td>
+            <td> <input class = "btn" type = "button" value = "6" onclick = "insert(6)" > </td>
+            <td> <input class = "btn" type = "button" value = "-" onclick = "insert('-')" > </td>
+            
+            </tr>
+            <tr> 
+            <td> <input class = "btn" type = "button" value = "7" onclick = "insert(7)" > </td>
+            <td> <input class = "btn" type = "button" value = "8" onclick = "insert(8)" > </td>
+            <td> <input class = "btn" type = "button" value = "9" onclick = "insert(9)" > </td>
+            <td> <input class = "btn" type = "button" value = "*" onclick = "insert('*')" > </td>
+            </tr>
+            <tr> 
+            <td> <input class = "btn" type = "button" value = "." onclick = "insert('.')"> </td>    
+            <td> <input class = "btn" type = "button" value = "0" onclick = "insert(0)" > </td>
+            <td> <input class = "btn" type = "button" value = "=" onclick = "equal()"> </td>
+            <td> <input  class = "btn" type = "button" value = "/" onclick = "insert('/')" > </td>
             </tr>
             <tr>
-                <td><button class="btn" id="1">1</button></td>
-                <td><button class="btn" id="2">2</button></td>
-                <td><button class="btn" id="3">3</button></td>
-                <td><button class="btn" id="+">+</button></td>
-            </tr>
-            <tr>
-                <td><button class="btn" id="4">4</button></td>
-                <td><button class="btn" id="5">5</button></td>
-                <td><button class="btn" id="6">6</button></td>
-                <td><button class="btn" id="-">-</button></td>
-            </tr>
-            <tr>
-                <td><button class="btn" id="7">7</button></td>
-                <td><button class="btn" id="8">8</button></td>
-                <td><button class="btn" id="9">9</button></td>
-                <td><button class="btn" id="*">*</button></td>
-            </tr>
-            <tr>
-                <td><button class="btn" id=",">,</button></td>
-                <td><button class="btn" id="0">0</button></td>
-                <td><button class="btn" id="=">=</button></td>
-                <td><button class="btn" id="/">/</button></td>
-            </tr>
+            <td>Cal</td>
+            <td> <input class = "btn" type = "button" value = "C" onclick = "form1.textview.value = ' ' " > </td>
+            <td> <input  class = "btn" type = "button" value = "B" onclick = "backspace()" > </td>
+            <td>cul</td>
+             </tr>
         </table>
         <script src="app.js">
         </script>
